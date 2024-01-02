@@ -18,24 +18,24 @@ export default function Sibebar() {
                 Trang chủ
                 </Sidebar.Item>
             </Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiShoppingCart}>
+          <Sidebar.Item href="/salesmanagement" icon={HiShoppingCart}>
             Quản lý mua bán
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={FaLaptop}>
+          <Sidebar.Item href="/productsmanagement" icon={FaLaptop}>
             Quản lý sản phẩm
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={FaWrench}>
+          <Sidebar.Item href="/repairmanagement" icon={FaWrench}>
             Quản lý sửa chữa
           </Sidebar.Item>
           <Sidebar.Item href="/hrmanagement" icon={HiUser}>
             Quản lý nhân sự
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiChartPie}>
+          <Sidebar.Item href="/statistic" icon={HiChartPie}>
             Quản lý doanh thu
           </Sidebar.Item>
         </Sidebar.ItemGroup>
         <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiSupport}>
+          <Sidebar.Item href="/setting" icon={HiSupport}>
             Cài đặt
           </Sidebar.Item>
         </Sidebar.ItemGroup>

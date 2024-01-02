@@ -6,7 +6,7 @@ import {HiHome, HiChartPie, HiTicket, HiShoppingBag, HiShoppingCart, HiSupport, 
 
 export default function Sibebar() {
   return (
-    <div className=" relative h-full">
+    <div className=" relative h-full ">
       <Sidebar aria-label="Sidebar with content separator example" theme={customSideBarTheme}>
       <Sidebar.Logo href="#" img="./favicon.ico" imgAlt="Flowbite logo">
         Cyber Store
@@ -14,11 +14,11 @@ export default function Sibebar() {
       <Sidebar.Items>
         <Sidebar.ItemGroup>
             <Sidebar.ItemGroup>
-                <Sidebar.Item href="#" icon={HiHome} theme={customSideBarTheme?.item}>
+                <Sidebar.Item href="/" icon={HiHome} theme={customSideBarTheme?.item}>
                 Trang chủ
                 </Sidebar.Item>
             </Sidebar.ItemGroup>
-          <Sidebar.Item href="/customers" icon={HiShoppingCart}>
+          <Sidebar.Item href="#" icon={HiShoppingCart}>
             Quản lý mua bán
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={FaLaptop}>
@@ -27,7 +27,7 @@ export default function Sibebar() {
           <Sidebar.Item href="#" icon={FaWrench}>
             Quản lý sửa chữa
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiUser}>
+          <Sidebar.Item href="/hrmanagement" icon={HiUser}>
             Quản lý nhân sự
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiChartPie}>

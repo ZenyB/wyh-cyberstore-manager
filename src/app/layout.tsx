@@ -16,22 +16,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-<div className=" w-screen h-screen flex bg-slate-700">
-  <div className=" top-0 left-0 w-64 bg-blue-800 overflow-y-auto">
-    <Sibebar />
-  </div>
-  <div className="flex-col w-screen bg-white h-screen flex-1">
-    {/* <div className="h-16 bg-gray-800"> </div> */}
-    <div className="flex-1 mr-0 overflow-y-auto">
-    <div className=" flex bg-slate-700">
-  <div className="flex-col w-screen bg-white h-screen flex-1">
-    <div className="h-16 bg-gray-800"> </div>
-    <div className="flex-1 pt-8 mr-0 ">
-      {children}
+    <div className=" w-screen h-screen flex bg-slate-700">
+    <Sibebar/>
+    <div className=" pt-8 px-5 pr-8 w-full bg-background-normal">
+        {children}
     </div>
-  </div>
-</div>    </div>
-  </div>
 </div>
   )
 }

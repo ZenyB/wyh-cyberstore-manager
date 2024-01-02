@@ -6,7 +6,7 @@ import {HiHome, HiChartPie, HiTicket, HiShoppingBag, HiShoppingCart, HiSupport, 
 
 export default function Sibebar() {
   return (
-    <div className=" relative h-full ">
+    <div className=" relative h-full">
       <Sidebar aria-label="Sidebar with content separator example" theme={customSideBarTheme}>
       <Sidebar.Logo href="#" img="./favicon.ico" imgAlt="Flowbite logo">
         Cyber Store
@@ -14,28 +14,28 @@ export default function Sibebar() {
       <Sidebar.Items>
         <Sidebar.ItemGroup>
             <Sidebar.ItemGroup>
-                <Sidebar.Item href="/" icon={HiHome} theme={customSideBarTheme?.item}>
+                <Sidebar.Item href="#" icon={HiHome} theme={customSideBarTheme?.item}>
                 Trang chủ
                 </Sidebar.Item>
             </Sidebar.ItemGroup>
-          <Sidebar.Item href="/salesmanagement" icon={HiShoppingCart}>
+          <Sidebar.Item href="/customers" icon={HiShoppingCart}>
             Quản lý mua bán
           </Sidebar.Item>
-          <Sidebar.Item href="/productsmanagement" icon={FaLaptop}>
+          <Sidebar.Item href="#" icon={FaLaptop}>
             Quản lý sản phẩm
           </Sidebar.Item>
-          <Sidebar.Item href="/repairmanagement" icon={FaWrench}>
+          <Sidebar.Item href="#" icon={FaWrench}>
             Quản lý sửa chữa
           </Sidebar.Item>
-          <Sidebar.Item href="/hrmanagement" icon={HiUser}>
+          <Sidebar.Item href="#" icon={HiUser}>
             Quản lý nhân sự
           </Sidebar.Item>
-          <Sidebar.Item href="/statistic" icon={HiChartPie}>
+          <Sidebar.Item href="#" icon={HiChartPie}>
             Quản lý doanh thu
           </Sidebar.Item>
         </Sidebar.ItemGroup>
         <Sidebar.ItemGroup>
-          <Sidebar.Item href="/setting" icon={HiSupport}>
+          <Sidebar.Item href="#" icon={HiSupport}>
             Cài đặt
           </Sidebar.Item>
         </Sidebar.ItemGroup>

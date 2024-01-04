@@ -1,15 +1,25 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
-import { ReactDOM } from 'react'
-import Sibebar from '@/components/sidebar'
-import Link from 'next/link'
+import { Button , CustomFlowbiteTheme,  Tabs} from 'flowbite-react'
+import { Console } from 'console'
+import {ProductCard} from '@/components/productCard'
+import SearchInput from '@/components/searchinput'
+
+const sampleProduct = {
+  name: "Sample Product",
+  src: "/sample.jpg",
+  price: 19.99,
+  brand: "Sample Brand",
+  sale: 10
+};
 
 export default function Home() {
   return (
-<div className="flex h-screen"> {/* Set white background for the page */}
-      <main className="flex-1 p-5 bg-white">
-        <p>asas</p>
-      </main>
-    </div>
+    <main className="flex max-h-screen flex-col fill-white">
+      <div className="z-10 fill-white max-w-5xl w-full font-mono text-sm ">
+
+        <label > Xin chao day la man hinh home</label>
+      </div>
+    </main>
   )
 }

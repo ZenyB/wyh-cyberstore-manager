@@ -1,12 +1,13 @@
-'use client'
+
+'use client';
 
 import { CustomFlowbiteTheme, Sidebar } from 'flowbite-react';
+import { HiHome, HiChartPie, HiShoppingCart, HiSupport, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
 import { FaFileInvoice, FaWrench, FaLaptop  } from "react-icons/fa";
-import {HiHome, HiChartPie, HiTicket, HiShoppingBag, HiShoppingCart, HiSupport, HiTable, HiUser, HiIdentification } from 'react-icons/hi';
 
-export default function Sibebar() {
+export default function SideBar() {
   return (
-    <div className=" relative h-full">
+<div className=" h-full ">
       <Sidebar aria-label="Sidebar with content separator example" theme={customSideBarTheme}>
       <Sidebar.Logo href="#" img="./favicon.ico" imgAlt="Flowbite logo">
         Cyber Store
@@ -14,28 +15,28 @@ export default function Sibebar() {
       <Sidebar.Items>
         <Sidebar.ItemGroup>
             <Sidebar.ItemGroup>
-                <Sidebar.Item href="#" icon={HiHome} theme={customSideBarTheme?.item}>
+                <Sidebar.Item href="/" icon={HiHome} theme={customSideBarTheme?.item}>
                 Trang chủ
                 </Sidebar.Item>
             </Sidebar.ItemGroup>
-          <Sidebar.Item href="/customers" icon={HiShoppingCart}>
+          <Sidebar.Item href="/salesmanagement" icon={HiShoppingCart}>
             Quản lý mua bán
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={FaLaptop}>
+          <Sidebar.Item href="/productsmanagement" icon={FaLaptop}>
             Quản lý sản phẩm
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={FaWrench}>
+          <Sidebar.Item href="/repairmanagement" icon={FaWrench}>
             Quản lý sửa chữa
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiUser}>
+          <Sidebar.Item href="/hrmanagement" icon={HiUser}>
             Quản lý nhân sự
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiChartPie}>
+          <Sidebar.Item href="/statistic" icon={HiChartPie}>
             Quản lý doanh thu
           </Sidebar.Item>
         </Sidebar.ItemGroup>
         <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiSupport}>
+          <Sidebar.Item href="/setting" icon={HiSupport}>
             Cài đặt
           </Sidebar.Item>
         </Sidebar.ItemGroup>
@@ -44,15 +45,14 @@ export default function Sibebar() {
     </div>
   );
 }
-
 const customSideBarTheme: CustomFlowbiteTheme['sidebar'] = {
     "root": {
-      "base": "h-full overflow-y-auto overflow-x-hidden static rounded min-h-screen bg-blue-800",
+      "base": "h-full overflow-y-auto overflow-x-hidden static rounded min-h-screen bg-gradient-to-b from-black to-indigo-950",
       "collapsed": {
         "on": "w-16",
         "off": "w-64"
       },
-      "inner": "h-full overflow-y-auto overflow-x-hidden static rounded min-h-screen bg-blue-800",
+      "inner": "h-full overflow-y-auto overflow-x-hidden static rounded min-h-screen bg-gradient-to-b from-black to-indigo-950",
     },
     "collapse": {
       "button": "group flex w-full items-center rounded-lg p-2 text-base font-normal text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700",
